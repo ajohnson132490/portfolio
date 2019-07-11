@@ -1,7 +1,7 @@
 /*Text types styles*/
 html {
-
   margin:0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: Esteban, Georgia, 'Times New Roman', serif;
@@ -13,10 +13,11 @@ body {
   text-transform: none;
   color: #DCDCDC;
 
-  background-color: rgb(32, 32, 96);
-  background-image: url("https://wallpapershome.com/images/pages/ico_h/21456.jpg");
+  background-image: linear-gradient(#F18C8E, #F0B7A4, #F1D185, #568EA6, #305F72);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+
 
   margin: 0;
 }
@@ -29,32 +30,77 @@ h1 {
 }
 h2 {
   text-align: center;
+  border-bottom: 0.1em solid #DCDCDC;
 }
 h3 {
-  padding-left: .5em;
-  padding-top: 0;
+  padding: 0.25em;
   text-align: center;
   font-size: 1.25em;
-  margin-top: 0;
-  margin-bottom: .25em;
+  margin: 0;
 }
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
-  height: 75%;
-  width: 75%;
+  height: 10em;
+  width: 18em;
+}
+a {
+  text-decoration: none;
+  color: #353535;
+}
+button {
+  width: 25%;
+  height: 2em;
+  margin-bottom: .5em;
+  margin-left: 16.66%;
+  background-image: linear-gradient(rgba(241,140,142, 0.6), rgba(86,142,166, 0.6));
+  border: none;
+}
+ul {
+  text-align: center;
+  list-style: none;
+  margin: .5em;
+  padding: 0;
 }
 
-
-/*Row and Columns*/
-.col {
-  display: block;
+/*Menu*/
+header {
+  background-color: #F18C8E;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.menu:after {
+  display:flex;
+  align-items: center;
+  content: "";
+  clear: both;
+  width: 100%;
+  padding: .25em;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   float: left;
   width: 30%;
   height: 50%;
+  margin-left:2.5%;
+}
+.menuItem a {
+  text-decoration: none;
+  color: #353535;
+}
+/*Row and Columns*/
+.col {
+  display: block;
+  float: left;
+  width: 30%;
+  height: 30em;
   margin-left:2.5%;
   background-color: rgba(0,0,0, 0.6);
   overflow: hidden;
@@ -64,20 +110,6 @@ img {
   text-indent: .5em;
   padding: 0.25em;
 }
-.col:hover #transparent {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,.6);
-}
-.col:hover .gitHubBtn {
-  display: block;
-  width: 5em;
-  height: 5em;
-  margin-left: auto;
-  margin-right: auto;
-}
 .row:after {
   display:flex;
   align-items: center;
@@ -86,19 +118,6 @@ img {
   clear: both;
   width: 100%;
 }
-
-/*Buttons and Overlay*/
-#transparent{
-  display: none;
-}
-.gitHubBtn {
-  display: none;
-}
-.overlay {
-  display: block;
-  position:absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding:0;
+.txtBox{
+  background-color: rgba(0,0,0,0.6);
 }
