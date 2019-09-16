@@ -103,7 +103,7 @@ header {
   height: 30em;
   margin-left:2.5%;
   background-color: rgba(0,0,0, 0.6);
-  overflow: scroll;
+  overflow: hidden;
 }
 .col p {
   text-align: center;
@@ -117,6 +117,7 @@ header {
   content: "";
   clear: both;
   width: 100%;
+  overflow: hidden;
 }
 .txtBox{
   background-color: rgba(0,0,0,0.6);
